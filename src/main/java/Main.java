@@ -11,8 +11,11 @@ public class Main {
 		String subject = "post example";
 		String body = "thank you for trying out post. :-]";
 		try {
+			System.out.println("Post start");
 			Post.email(to, subject, body);
+			System.out.println("Post sent");
 		} catch (MessagingException e) {
+			System.out.println("Post failed");
 			e.printStackTrace();
 		}
 
